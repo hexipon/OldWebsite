@@ -1,8 +1,8 @@
 <?php
 
 $host = "mysql:host=localhost;dbname=dan"; /* Host name */
-$user = "dan"; /* User */
-$password = "P455w0rd"; /* Password */
+$user = "----"; /* User */
+$password = "----"; /* Password */
 
 
 try{
