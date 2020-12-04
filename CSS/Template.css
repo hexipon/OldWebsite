@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .logo{
+    background-color:#050515; 
+    vertical-align: baseline;
+    height: 100px;
+    min-width: 285px;
+  }
+  .logo h1{
+    font-size: 35px;
+    color: #FFFAF0;
+    text-align: left;
+    margin: 0px;
+    text-decoration: none;
+  }
+  .logo p{
+    font-size: 20px;
+    color: #DCDCDC;
+    text-align: left;
+    margin: 0px;
+  }
+  .logo #logoImg {
+    filter: grayscale();
+    float: left;
+    height: 100%;
+  }
+  
+  #nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav #myLinks {
+    display: none;
+  }  
+  #nav #login {
+    display: none;
+  }
+  
+  #nav a {
+    color: white;
+    padding: 14px 11px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  #nav a.menu {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  #nav .active{
+    visibility: visible;
+  }
+
+  .content {
+    padding: 0px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1080px;
+    z-index: 1;
+  }
+  
+  .sticky + .content {
+    padding-top: 50px;
+  }
+  
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+  .portfolioEntry{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .portfolioEntry p{
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .portfolioEntry h2{
+    color: white;
+    text-align: center;
+    font-size: 130%;
+    width: 100%;
+    margin-top: 1px;
+  }
+  .portfolioEntry h1{
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 1px;
+  }
+  .portfolioEntry a{
+    font-size: 100%;
+    width: 100%;
+    font-style: italic;
+    color: white;
+  }
+  .portfolioEntry video{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /*Contact form*/
+.container {
+  background-color: #111;
+  padding: 10px;
+}
+.content p, h1{
+  color: white;
+}
+label{
+  color:white;
+}
+input[type=text],input[type=password], textarea {
+  transition-property: border-radius, border-color;
+  transition-duration: 0.3s;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #112;
+  margin-bottom: 16px;
+  resize: vertical;
+  margin-top: 6px;
+  padding: 12px;
+  color: white;
+  outline:none;
+  width: 100%;
+}
+
+input[type=text]:focus,input[type=password]:focus, textarea:focus{
+  border-color:green;
+  border-radius: 1em;
+}
+
+input[type=submit] {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #223;
+  border-style: solid;
+  border-color: #223;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border-width: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+input[type=submit]:hover,input[type=submit]:focus,input[type=submit]:active {
+  background-color: #222;
+}
+
+.searchbar input[type=text]{
+  width: calc(100% - 61px);
+  margin: 0px;
+}
+.searchbar input[type=submit]{
+  margin-top: 0px;
+  float: right;
+}
+.searchbar form{
+  margin: 0px;
+}
+/*non mobile */
+@media (min-width: 850px)
+{
+    .logo{
+      height: 150px;
+    }
+    .logo h1{
+      font-size: 45px;
+    }
+    .logo p{
+      font-size: 30px;
+    }
+    .portfolioEntry{
+      float: left;
+    }
+    .portfolioEntry p{
+      text-align: left;
+    }
+    .portfolioEntry video{
+      width: 60%;
+      float: left;
+    }
+
+    input[type=text]:hover,input[type=password]:hover, textarea:hover{
+      border-radius: 1em;
+    }
+    #nav #myLinks {
+      display: block;
+    }
+    #nav #login {
+      display: block;
+      float: right;
+    }
+    
+    #nav a {
+      color: white;
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px 11px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+  #nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #nav .active{
+    visibility: hidden;
+    width: 0px;
+    padding: 0px 0px;
+  }
+  .editArea1{
+    width: 50%;
+    float:left;
+    height: 500px;
+  }
+  .editArea2{
+    width: 50%;
+    float: right;
+    height: 500px;
+    text-align: center;
+  }
+  .editArea2 video{
+    width: 100%;
+  }
+  .editArea4{
+    text-align:center;
+  }
+  }
